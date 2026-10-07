@@ -4,31 +4,41 @@
     font-family: "Averia Serif Libre", serif;
     
 }
+html {
+  scroll-behavior: smooth;
+}
 .navbarmaster
 {
     position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.164);
 }
 .navbar
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    z-index: 1;
-    position: sticky;
+    align-items: center;
+    padding: 10px 40px;
+    position: relative;
    
 }
 .brandname
 {
     border: 1px solid;
-    justify-content: center;
+    
     font-weight: 300;
     padding: 5px 5px;
     font-size: 20px;
     font-family: "Roboto Slab", serif;
     position: relative;
     
+}
+.brandname:hover
+{
+    transform: scale(1.2);
 }
 .nevmenu
 {
@@ -41,6 +51,21 @@
     position: relative;
 
 }
+.icons
+{
+    align-items: center;
+    cursor: pointer;
+    display:none ;
+    font-size: 20px;
+   
+    
+    
+}
+#check
+{
+    display: none;
+}
+
 .link
 {
     text-decoration: none;
@@ -52,7 +77,7 @@
     display: block;
     width: 100%;
     height: 700px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* margin-bottom: 20px; */
     background-color: #e2e2e2;
     /* padding-bottom: 10px; */
@@ -101,7 +126,7 @@
 }
 .productspara
 {
-    /* justify-content: left; */
+    
      font-family: "Roboto Slab", serif;
     font-weight: 400;
     text-align: left;
@@ -115,6 +140,10 @@
     height: fit-content;
     padding: 5px 5px;
     
+}
+.button:hover
+{
+    transform: scale(1.2);
 }
 .footer
 {
@@ -130,4 +159,98 @@
 {
     margin-top: 10px;
     padding-bottom: 10px;
+}
+/* RESPONSIVE */
+@media (max-width:768px)
+{
+    .navbar
+    {
+        padding: 1rem 5%;
+    }
+    
+    .icons
+    {
+        display: flex;
+    }
+    #cancelIcon
+    {
+        display: none;
+    }
+    #check:checked~.icons #menuIcon
+    {
+        display:none;
+    }
+    #check:checked~.icons #cancelIcon
+    {
+        display: block;
+    }
+  
+    .nevmenu
+    {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        flex-direction: column;
+        left: 0%;
+        display: none;
+        background-color: #ffffffd2;
+        backdrop-filter: blur(10px);
+    }
+    #check:checked~ .nevmenu
+    {
+        display: block;
+    }
+    .links
+    {
+        text-align: center;
+        margin: 5px 0px;
+    }
+    .products
+    {
+        padding: 0px;
+    }
+    .productscard
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .productsimage
+    {
+        width: 100%;
+        height: auto;
+        
+    }
+    #productscard
+    {
+        display: flex;
+        flex-direction: column-reverse;
+         
+    }
+    .productstext
+    {
+        height: auto;
+        width: auto;
+        
+        
+    }
+    .productspara
+    {
+        justify-content: center;
+        text-align: center;
+    }
+    .productheading
+    {
+        text-align: center;
+        margin: 0px;
+    }
+    .productstext
+    {
+        text-align: center;
+    }
+    .button
+    {
+        margin: 0 auto;
+    }
 }
