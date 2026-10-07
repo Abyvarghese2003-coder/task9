@@ -1,0 +1,133 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "Averia Serif Libre", serif;
+    
+}
+.navbarmaster
+{
+    position: sticky;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    z-index: 1;
+    position: sticky;
+   
+}
+.brandname
+{
+    border: 1px solid;
+    justify-content: center;
+    font-weight: 300;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    
+}
+.nevmenu
+{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    align-items: center;
+    position: relative;
+
+}
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+.heroimage
+{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    background-color: #e2e2e2;
+    /* padding-bottom: 10px; */
+}
+.products
+{
+
+    display: flex;
+    flex-direction:column;
+    background-color: #e2e2e2;
+    padding: 30px 100px;
+    /* gap: 50px; */
+    /* justify-content: space-between; */
+    
+}
+.productscard
+{
+    display: flex;
+    gap: 60px;
+    padding: 40px;
+    margin: 10px 30px 10px 40px;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1200px;
+    margin: 0 auto; */
+}
+.productsimage
+{
+    object-fit: cover;
+    width: 40%;
+    height: 400px;
+    border-radius: 20px;
+}
+.productstext
+{
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    font-weight: 100;
+    }
+.productheading
+{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: left;
+}
+.productspara
+{
+    /* justify-content: left; */
+     font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.button
+{
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 5px;
+    
+}
+.footer
+{
+    padding-top: 10px;
+    background-color: #333333;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-family: "Roboto Slab", serif;
+}
+.sociallink
+{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
